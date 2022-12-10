@@ -296,6 +296,7 @@ const msg = {
       { title: "创建人", dataIndex: "creator", key: "creator" },
       { title: "创建时间", dataIndex: "add_time", key: "add_time" },
     ],
+    list: msgList,
     total: 4,
   },
   msg: "",

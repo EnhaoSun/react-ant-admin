@@ -308,7 +308,7 @@ function MyTable({
         width={1000}
         onClose={hiddin}
         maskClosable={true}
-        visible={showDrawer}
+        open={showDrawer}
         title="表格显示设置"
       >
         <Table

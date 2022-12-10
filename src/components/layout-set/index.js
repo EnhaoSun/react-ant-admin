@@ -74,7 +74,7 @@ export default function LayoutSet() {
         closable={false}
         onClose={onClose}
         width={300}
-        visible={visible}
+        open={visible}
       >
         <h2 className="title">选择布局</h2>
         <Row justify="space-around">

@@ -73,13 +73,13 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
-    "start": "node color && env-cmd --verbose -e development node scripts/start.js",
-    "start:color": "env-cmd --verbose -e development_color node color && env-cmd --verbose -e development_color node scripts/start.js",
-    "start:mock": "node color && env-cmd --verbose -e development_mock node scripts/start.js",
-    "start:mock_color": "env-cmd --verbose -e development_color_mock node color && env-cmd --verbose -e development_color_mock node scripts/start.js",
-    "build": "node color && env-cmd --verbose -e production node scripts/build.js",
-    "build:color": "env-cmd --verbose -e production_color node color && env-cmd --verbose -e production_color node scripts/build.js",
-    "build:github-pages": "env-cmd --verbose -e production_github node color && env-cmd --verbose -e production_github node scripts/build.js"
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider & node color && env-cmd --verbose -e development node scripts/start.js",
+    "start:color": "set NODE_OPTIONS=--openssl-legacy-provider & env-cmd --verbose -e development_color node color && env-cmd --verbose -e development_color node scripts/start.js",
+    "start:mock": "set NODE_OPTIONS=--openssl-legacy-provider & node color && env-cmd --verbose -e development_mock node scripts/start.js",
+    "start:mock_color": "set NODE_OPTIONS=--openssl-legacy-provider & env-cmd --verbose -e development_color_mock node color && env-cmd --verbose -e development_color_mock node scripts/start.js",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider & node color && env-cmd --verbose -e production node scripts/build.js",
+    "build:color": "set NODE_OPTIONS=--openssl-legacy-provider & env-cmd --verbose -e production_color node color && env-cmd --verbose -e production_color node scripts/build.js",
+    "build:github-pages": "set NODE_OPTIONS=--openssl-legacy-provider & env-cmd --verbose -e production_github node color && env-cmd --verbose -e production_github node scripts/build.js"
   },
   "eslintConfig": {
     "extends": [
